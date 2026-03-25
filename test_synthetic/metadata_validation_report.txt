@@ -1,0 +1,59 @@
+Synthetic Metadata Validation Report
+
+Datasets checked: 4
+Total differences: 22
+
+synthetic_extra.parquet vs metadata_batch_extra.json: DIFFERENCES FOUND
+Columns checked: 18
+- synthetic_extra.parquet.KN [numeric_min] expected=26407216.3311 observed=32223016.0
+- synthetic_extra.parquet.SM [numeric_mean] expected=1614.1088 observed=5092.627583
+- synthetic_extra.parquet.SW [numeric_min] expected=10.6194 observed=8931.399858
+- synthetic_extra.parquet.PRAEF [unique_values_per_year] expected=16 observed=15 (year=2016)
+- synthetic_extra.parquet.GART [unique_values_per_year] expected=18 observed=17 (year=2013)
+Notes:
+- synthetic_extra.parquet.KN [numeric_mean] within 15% of metadata
+- synthetic_extra.parquet.GW [numeric_mean] within 15% of metadata
+- synthetic_extra.parquet.SW [numeric_mean] within 15% of metadata
+
+synthetic_intra.parquet vs metadata_batch_intra.json: DIFFERENCES FOUND
+Columns checked: 12
+- synthetic_intra.parquet.KN [numeric_min] expected=15281515.1093 observed=21991998.0
+- synthetic_intra.parquet.GW [numeric_mean] expected=9870.8486 observed=7878.643393
+- synthetic_intra.parquet.GW [numeric_min] expected=0.172 observed=5967.33616
+- synthetic_intra.parquet.SM [numeric_mean] expected=1212.7186 observed=1620.392983
+- synthetic_intra.parquet.SW [numeric_min] expected=10.2006 observed=6769.900205
+Notes:
+- synthetic_intra.parquet.KN [numeric_mean] within 15% of metadata
+- synthetic_intra.parquet.SW [numeric_mean] within 15% of metadata
+
+synthetic_prodcom.parquet vs metadata_batch_prodcom.json: DIFFERENCES FOUND
+Columns checked: 11
+- synthetic_prodcom.parquet.PME1 [numeric_mean] expected=311483.9843 observed=861078.8152
+- synthetic_prodcom.parquet.PME2 [numeric_mean] expected=3842.2503 observed=15105.015842
+Notes:
+- synthetic_prodcom.parquet.PEH1 [numeric_mean] within 15% of metadata
+- synthetic_prodcom.parquet.PME2 [numeric_max] within 15% of metadata
+
+synthetic_urs.parquet vs metadata_batch_urs_re.json: DIFFERENCES FOUND
+Columns checked: 13
+- synthetic_urs.parquet.FSW_GEMNR [numeric_min] expected=18384.4981 observed=24516.0
+- synthetic_urs.parquet.FSW_LKZ [unique_values_per_year] expected=11 observed=9 (year=2013)
+- synthetic_urs.parquet.FSW_LKZ [unique_values_per_year] expected=5 observed=4 (year=2014)
+- synthetic_urs.parquet.FSW_LKZ [unique_values_per_year] expected=7 observed=5 (year=2016)
+- synthetic_urs.parquet.FSW_LKZ [unique_values_per_year] expected=7 observed=6 (year=2017)
+- synthetic_urs.parquet.FSW_LKZ [unique_values_per_year] expected=6 observed=4 (year=2018)
+- synthetic_urs.parquet.FSW_LKZ [unique_values_per_year] expected=6 observed=5 (year=2021)
+- synthetic_urs.parquet.OENACE [numeric_min] expected=30883.9803 observed=35882.0
+- synthetic_urs.parquet.USB [numeric_min] expected=0.3674 observed=4.802942
+- synthetic_urs.parquet.GCD_FSW [numeric_min] expected=18384.4981 observed=24509.0
+Notes:
+- synthetic_urs.parquet.FSW_NUTS3 [numeric_mean] within 15% of metadata
+- synthetic_urs.parquet.FSW_NUTS3 [numeric_min] within 15% of metadata
+- synthetic_urs.parquet.FSW_NUTS3 [numeric_max] within 15% of metadata
+- synthetic_urs.parquet.FSW_GEMNR [numeric_mean] within 15% of metadata
+- synthetic_urs.parquet.FSW_GEMNR [numeric_max] within 15% of metadata
+- synthetic_urs.parquet.OENACE [numeric_mean] within 15% of metadata
+- synthetic_urs.parquet.OENACE [numeric_max] within 15% of metadata
+- synthetic_urs.parquet.USB [numeric_mean] within 15% of metadata
+- synthetic_urs.parquet.GCD_FSW [numeric_mean] within 15% of metadata
+- synthetic_urs.parquet.GCD_FSW [numeric_max] within 15% of metadata
